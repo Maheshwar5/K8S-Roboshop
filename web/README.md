@@ -8,7 +8,7 @@ Communication is going from,
 # After creating web.
 login into web and call catalogue service
 
-[ec2-user@ip-xxx-xx-xx-xxx web]$ kubectl exec -it web -- bash
+$ kubectl exec -it web -- bash
 root@web:/# curl http://catalogue-service:8080
 
 
