@@ -6,8 +6,8 @@ metadata:
   labels:
     name: web
     tier: frontend
-  spec: 
-    containers:
+spec: 
+  containers:
     - name: web
       imagePullPolicy: Always
       image: rmahesh9/web:k8
