@@ -15,4 +15,4 @@ root@web:/# curl http://catalogue-service:8080
 
 # Now, the communication is going from user to loadbalancer
 
-![alt text](LoadBalancer flow.png)
+![alt text](LoadBalancer-flow.png)
