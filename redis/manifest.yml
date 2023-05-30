@@ -10,7 +10,7 @@ spec:
   containers:
   - name: redis
     imagePullPolicy: Always
-    image: rmahesh9/redis:k8
+    image: redis
     ports:
       - containerPort: 6379
     resources:
