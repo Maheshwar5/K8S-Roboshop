@@ -27,7 +27,7 @@ spec:
   containers:
   - name: mysql
     imagePullPolicy: Always
-    image: rmahesh9/mysql:v1
+    image: rmahesh9/mysql:k8
     envFrom:
     - configMapRef:
         name: mysql-config
