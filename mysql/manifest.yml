@@ -4,22 +4,21 @@ kind: ConfigMap
 metadata:
   name: mysql-config
 data:
-  MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
   MYSQL_DATABASE: "cities"
+  MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
 ---
 apiVersion: v1
 kind: Secret
 metadata:
   name: mysql-secret
-type: Opaque  
+type: Opaque
 data:
-  MYSQL_USER: c2hpcHBpbmc= 
+  MYSQL_USER: c2hpcHBpbmc=
   MYSQL_PASSWORD: c2VjcmV0
-  MYSQL_ROOT_PASSWORD: cm9vdDEyMw==
 ---
 apiVersion: v1
 kind: Pod
-metadata: 
+metadata:
   name: mysql
   labels:
     name: mysql
@@ -36,13 +35,6 @@ spec:
         name: mysql-secret
     ports:
       - containerPort: 3306
-    resources:
-      requests:
-        cpu: "100m"
-        memory: "128Mi"
-      limits:
-        cpu: "100m"
-        memory: "128Mi"      
 ---
 apiVersion: v1
 kind: Service
@@ -54,5 +46,5 @@ spec:
     tier: db
   ports:
     - protocol: TCP
-      port: 3306 # service port
-      targetPort: 3306  # container port 
+      port: 3306
+      targetPort: 3306
