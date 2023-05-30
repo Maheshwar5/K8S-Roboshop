@@ -9,3 +9,4 @@ This project is configure RoboShop using Pods, ConfigMaps, Secrets. These are th
 * Nginx config in web project is important.
 
 ![alt text](roboshop-k8.jpg)
+
