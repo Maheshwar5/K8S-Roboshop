@@ -22,3 +22,10 @@ rabbitmq
 mysql
 
 # App-tier
+
+
+
+
+# Error:
+OOMKILLED
+it is an error when CPU & Memory resources are not provided sufficiently
