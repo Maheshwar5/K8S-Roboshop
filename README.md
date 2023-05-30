@@ -10,3 +10,15 @@ This project is configure RoboShop using Pods, ConfigMaps, Secrets. These are th
 
 ![alt text](roboshop-k8.jpg)
 
+
+
+
+
+
+# DB-tier
+mongodb
+redis
+rabbitmq
+mysql
+
+# App-tier
