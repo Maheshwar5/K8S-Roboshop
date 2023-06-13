@@ -12,8 +12,8 @@ spec:
     imagePullPolicy: Always
     image: rabbitmq
     ports:
-      - containerPort: 5672
-      - containerPort: 15672
+      - containerPort: 5672 # For Message queue
+      - containerPort: 15672 # To open RabbitMQ in HTTP browser
 ---
 apiVersion: v1
 kind: Service
