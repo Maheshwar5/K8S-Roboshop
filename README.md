@@ -28,6 +28,20 @@ This project is configure RoboShop using Pods, ConfigMaps, Secrets. These are th
 
 
 
+# How Pod goes and hook up with the services?
+* Ans: Through selectors! Label based selectors.
+* We're using the functionality of Labels, to connect Pods & Services.
+----------
+  labels:
+    name: user
+    tier: app
+
+
+  selector:
+    name: user
+    tier: app
+-----------        
+
 
 
 # DB-tier
